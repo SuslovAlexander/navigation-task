@@ -1,5 +1,6 @@
 import classes from './NavItem.module.css'
-import Icon from "../NavItemIcon/NavItemIcon";
+import NavItemIconIcon from "../NavItemIcon/NavItemIcon";
+import NavItemIcon from "../NavItemIcon/NavItemIcon";
 
 const NavItem = ({id, text, selected, name, onClick}) => {
     const navItem = `${classes.item} ${selected ? classes.selected : ""}`;
@@ -10,8 +11,8 @@ const NavItem = ({id, text, selected, name, onClick}) => {
 
     return (
         <li className={navItem} onClick={handleClick}>
-            {selected && <Icon color={"white"} name={name}/>}
-            {!selected && <Icon color={"black"} name={name}/>}
+            {selected && <NavItemIconIcon color={"white"} name={name}/>}
+            {!selected && <NavItemIcon color={"black"} name={name}/>}
             {text}
         </li>
     )

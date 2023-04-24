@@ -1,1 +1,11 @@
-familiarity with the structure of training - 1h
+familiarity with the structure of training and (2h)
+learn HTTP, host, domen. React. NPM. JSX. Virtual DOM (1h)
+learn JWT (1h)
+develop Navbar:
+    -create react project and install reactDevTools (1h)
+    -develop Navigation component (1/2h)
+    -develop NavItem component (1/2h)
+    -develop NavItemIcon component (1h)
+    -firs refactoring (1h)
+
+
