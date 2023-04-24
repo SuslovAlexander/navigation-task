@@ -1,7 +1,7 @@
 import classes from './App.module.css';
 import {useState} from "react";
-import Navigation from "./NavBar/Navigation/Navigation";
-import ContentScreen from "./ContentScreen";
+import SideNavigation from "./NavBar/SideNavigation/SideNavigation";
+import ContentScreen from "./Content/ContentScreen";
 
 const App = () => {
    const contentList = [
@@ -17,7 +17,7 @@ const App = () => {
        {id: 10, content: "Content for id===10 (Промокоды)"}
    ]
     const [showContent, setShowContent] = useState({id: 1, content: "Content for id===1"});
-        const handleSetContent = (id) => {
+        const handleSetContent = (id) => { // тут логика просто для примера. Идея в том, что выбор конкретного пункта несет id "наверх"
         let temp = contentList.find(el => el.id === id);
         setShowContent(temp);
     }
@@ -25,7 +25,7 @@ const App = () => {
     return (
         <div className={classes.container}>
             <section className={classes.app}>
-                <Navigation onSetContemt={handleSetContent} />
+                <SideNavigation onSetContemt={handleSetContent} />
                 <ContentScreen content={showContent}/>
             </section>
         </div>

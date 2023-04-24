@@ -1,6 +1,6 @@
-import classes from './Navigation.module.css'
+import classes from './SideNavigation.module.css'
 import {useState} from 'react';
-import NavItem from "./NavBar/NavItem/NavItem";
+import NavItem from "../NavItem/NavItem";
 
 
 const SideNavigation = ({onSetContemt}) => {
